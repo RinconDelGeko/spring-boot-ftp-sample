@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.gekosoft.sftpupload.service.impl;
 
 import com.gekosoft.sftpupload.configuration.SFTPConfiguration.UploadGateway;
@@ -17,16 +12,13 @@ import org.springframework.web.multipart.MultipartFile;
 
 /**
  *
- * @author Miguel Angel
+ * @author CamperRdG
  */
 @Controller
 public class MainServiceImpl implements  MainService{
 
   @Autowired
   UploadGateway uploadGateway;
-  
-  @Autowired
-  SftpMessageHandler handler;
   
   @Override
   public void uploadFile(MultipartFile file, String dir) {

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.gekosoft.sftpupload.configuration;
 
 import com.jcraft.jsch.ChannelSftp.LsEntry;
@@ -26,7 +21,7 @@ import org.springframework.messaging.handler.annotation.Payload;
 
 /**
  *
- * @author Miguel Angel
+ * @author CamperRdG
  */
 @Configuration
 public class SFTPConfiguration {
@@ -44,7 +39,7 @@ public class SFTPConfiguration {
     @Value("${spring.sftp.password}")
     private String sftpPasword;
 
-    @Value("${spring.sftp.remote.directory:/holaquetal}")
+    @Value("${spring.sftp.remote.directory:/default}")
     private String sftpRemoteDirectory;
 
     
