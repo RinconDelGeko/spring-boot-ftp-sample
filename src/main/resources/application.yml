@@ -1,0 +1,12 @@
+spring:
+  sftp:
+    host: 127.0.0.1
+    password: pass
+    user: user
+    port: 22
+    remote: 
+      directory: /pruebasFichero
+  http:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
