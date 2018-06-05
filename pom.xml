@@ -43,7 +43,15 @@
                     <groupId>org.springframework.integration</groupId>
                     <artifactId>spring-integration-sftp</artifactId>
                 </dependency>
+               <dependency>
+                    <groupId>org.apache.sshd</groupId>
+                    <artifactId>sshd-core</artifactId>
+                    <version>1.7.0</version>
+                    <scope>test</scope>
+                </dependency>
+
 	</dependencies>
+        
 
 	<build>
 		<plugins>
